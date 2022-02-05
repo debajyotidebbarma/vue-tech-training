@@ -11,7 +11,7 @@
       <div id='invite-form-div'>
          <form>
             <br><br>
-            <label  class='check-names check-options' for='member-email'>
+            <label  class='check-options' for='member-email'>
             Email of the member</label><br>
             <input class='check-names'
                type='email' name='member-email' id='member-email' v-model='memberEmail'/><br><br>
@@ -19,7 +19,7 @@
                <input class='check-names' type='checkbox' v-model='memberRole' value='Admin'/>
                <div class='check-names check-options'>Admin</div>
                <br>
-               <div class='desc check-names'>Access evrything in Chargebee</div>
+               <div class='desc'>Access evrything in Chargebee</div>
             </label><br><br>
             <br>
             <label>
@@ -27,7 +27,7 @@
                v-model='memberRole' value='Tech-support'/>
                <div class='check-names check-options'>Tech Suppport</div>
                <br>
-               <div class=' check-names desc'>
+               <div class='desc'>
                User can view "subscription" and "product catalog" tabs.
                Can also view add comments to, send, download individual credit notes/ invoices.
                </div>
@@ -37,7 +37,7 @@
                <input  class='check-names' type='checkbox' v-model='memberRole' value='Analyst'/>
                <div class='check-names check-options'>Analyst</div>
                <br>
-               <div class='check-names desc'>
+               <div class='desc'>
                   In addition to tech support level access,
                   User will have access to SaaS metrics report
                </div>
@@ -103,14 +103,11 @@ export default class InviteMembers extends Vue {}
  margin-left:70px;
  }
  .desc{
+ float:left;
  margin-left:70px;
  }
-
- #parent{
- background-color: #659DBD;
- }
-
  .check-options{
+ float:left;
  font-weight:bold;
  }
 
