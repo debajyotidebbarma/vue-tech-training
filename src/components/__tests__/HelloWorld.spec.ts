@@ -1,9 +1,9 @@
-import HelloWorld from '../HelloWorld.vue';
 import { render } from '@testing-library/vue';
+import FrontPage from '../FrontPage.vue';
 
-describe('Hello World', () => {
+describe('Front Page', () => {
   it('It renders the text "Ecosystem"', () => {
-    const { getByText } = render(HelloWorld);
+    const { getByText } = render(FrontPage);
     getByText('Ecosystem');
-  })
+  });
 });
